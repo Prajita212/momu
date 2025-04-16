@@ -1,4 +1,9 @@
 @import "tailwindcss";
+.swiper,
+.swiper-wrapper,
+.swiper-slide {
+  overflow: visible !important;
+}
 
 :root {
   --background: #ffffff;
