@@ -34,10 +34,11 @@ function About() {
   ];
 
   return (
-    <div className="mt-8 bg-[#F9F7F7]">
+    <div>
+    <div className="flex-col items-center justify-between mt-10 h-auto bg-[#F9F7F7] p-10 ">
       <h1 className="text-center md:text-4xl text-2xl font-bold">What We Offer</h1>
 
-      <div className="md:mx-20 mt-6">
+      <div className="md:mx-20 mt-6 mx-30 md:overflow-visible overflow-hidden">
         <Swiper
           modules={[Pagination, Autoplay]}
           spaceBetween={20}
@@ -64,17 +65,17 @@ function About() {
                   />
                 </div>
                 <h2 className="font-semibold mt-3 text-lg">{offer.title}</h2>
-                <p className="text-sm mt-2 text-gray-600">{offer.desc}</p>
+                <p className="text-sm mt-2 mb-4 text-gray-600">{offer.desc}</p>
               </div>
             </SwiperSlide>
           ))}
         </Swiper>
       </div>
-
-      <div className="flex items-center justify-center gap-10 bg-[#FFA20C] md:h-100 h-50 mt-8 w-full"><div>
+      </div>
+      <div className="flex items-center justify-center mt-10 gap-10 bg-[#FFA20C] md:h-100 h-50 w-full"><div>
 <h1 className="md:text-5xl text-3xl font-bold">Scan the QR </h1>
 <p className="md:text-3xl mt-3">Sit back, and enjoy the food</p>
-<button className="rounded-sm bg-white mt-3"><h1 className="mx-3 my-1">Click here to start</h1></button>
+<button className="rounded-sm bg-white mt-3 border border-gray-100 hover:text-[#FFA20C] hover:translate-y-[-2px] shadow-lg "><h1 className="mx-3 my-1">Click here to start</h1></button>
 </div>
 <Image src={image8}
 className="md:h-90 md:w-100 h-40 w-50"/>

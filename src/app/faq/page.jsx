@@ -76,12 +76,6 @@ function Faq() {
           </div>
         ))}
       </div>
-      <div className='mt-12 text-center'>
-        <p className='text-gray-600 mb-4'>Still need help?</p>
-        <button className='px-3 py-1 bg-blue-600 text-white font-medium rounded-lg hover:bg-blue-700 transition'>
-          Contact Support
-        </button>
-      </div>
     </div>
   );
 }

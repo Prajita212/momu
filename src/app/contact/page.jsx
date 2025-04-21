@@ -4,7 +4,7 @@ import Image from 'next/image';
 
 function Contact() {
   return (
-    <div className="max-w-7xl mx-auto px-4 py-8">
+    <div className="max-w-7xl mx-auto px-4 py-8 bg-[#F9F7F7] mt-10">
       <div className='flex justify-center mb-12'>
         <Image 
           src={image1} 
