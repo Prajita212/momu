@@ -43,9 +43,8 @@ function Faq() {
             className='w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500'
           />
           <button className='absolute right-3 top-3 text-gray-500'>
-            <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
-            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" stroke="currentColor">
+              </svg>
           </button>
         </div>
       </div>
@@ -57,11 +56,10 @@ function Faq() {
               className='w-full px-6 py-4 text-left flex justify-between items-center bg-white hover:bg-gray-50 transition'
               onClick={() => toggleAccordion(index)}
             >
-              <h2 className='text-lg font-medium text-gray-800'>{faq.question}</h2>
+              <h2 className='font-medium text-gray-800'>{faq.question}</h2>
               <svg
                 className={`w-5 h-5 text-gray-500 transform transition ${activeIndex === index ? 'rotate-180' : ''}`}
                 fill="none"
-                viewBox="0 0 24 24"
                 stroke="currentColor"
               >
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />

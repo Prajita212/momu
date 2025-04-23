@@ -1,17 +1,15 @@
 import React from 'react';
-import image1 from "../../../public/momu.jpg";
+import image1 from "../../../public/momu.png";
 import Image from 'next/image';
 
 function Contact() {
   return (
-    <div className="max-w-7xl mx-auto px-4 py-8 bg-[#F9F7F7] mt-10">
-      <div className='flex justify-center mb-12'>
+    <div className="max-w-350 mx-auto px-4 py-8 bg-[#F9F7F7] mt-10">
+      <div className='flex items-center justify-center mb-12'>
         <Image 
           src={image1} 
           alt="Momu Logo"
-          className='h-40 w-40 object-contain'
-          width={160}
-          height={160}
+          className='lg:h-40 lg:w-40 w-20 h-20 object-contain'
         />
       </div>
 

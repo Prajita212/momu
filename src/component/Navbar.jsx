@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import { IoReorderThreeOutline, IoClose } from "react-icons/io5";
 import Link from "next/link";
 import Image from "next/image";
-import image from "../../public/momu.jpg";
+import image from "../../public/momu.png";
 
 function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -13,13 +13,12 @@ function Navbar() {
   };
 
   return (
-    <div className="relative z-50">
-
-      <div className="flex justify-between items-center font-semibold mx-8 mt-8 md:mx-10 top-0 bg-white">
+    <div>
+<div className="flex justify-between items-center lg:w-350 font-semibold mx-8 mt-8 md:mx-10 top-0 bg-white">
         <div>
-          <Image src={image} alt="Momu logo" width={50} height={50} />
+          <Image src={image}  className="md:w-15 md:h-15 w-10 h-10" />
         </div>
-        <div className="hidden md:flex md:gap-20 gap-10">
+        <div className="hidden lg:flex md:gap-20 gap-10">
           <Link href="/">
             <h2 className="hover:text-[#FFA20C] hover:scale-110 transition duration-300">
               Partner with us
@@ -41,7 +40,7 @@ function Navbar() {
             </h2>
           </Link>
         </div>
-        <div className="md:hidden flex items-center gap-4">
+        <div className="lg:hidden flex items-center gap-4">
           <button
             onClick={toggleMenu}
             className="text-2xl cursor-pointer hover:text-[#FFA20C]"
