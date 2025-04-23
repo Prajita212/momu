@@ -1,10 +1,12 @@
 import React from 'react';
 import image1 from "../../../public/momu.png";
+import { FaFacebook, FaInstagram, FaYoutube} from "react-icons/fa";
 import Image from 'next/image';
+
 
 function Contact() {
   return (
-    <div className="max-w-350 mx-auto px-4 py-8 bg-[#F9F7F7] mt-10">
+    <div className="grid justify-center max-w-350 mx-auto px-4 py-8 bg-[#F9F7F7] mt-10 ">
       <div className='flex items-center justify-center mb-12'>
         <Image 
           src={image1} 
@@ -13,8 +15,8 @@ function Contact() {
         />
       </div>
 
-      <div className='grid grid-cols-2 lg:grid-cols-4 gap-8'>
-        <div className='space-y-3'>
+      <div className='grid grid-cols-2 lg:grid-cols-4 gap-20 md:gap-50'>
+        <div className='items-center justify-center space-y-3'>
           <h3 className='font-bold text-lg mb-4'>Restaurant Types</h3>
           <ul className='space-y-2 text-gray-600'>
             <li>Cafes</li>
@@ -35,14 +37,16 @@ function Contact() {
         <div className='space-y-3'>
           <h3 className='font-bold text-lg mb-4'>Follow Us</h3>
           <ul className='space-y-2 text-gray-600'>
-            <li>
-              <a href="#" className="hover:text-blue-600 transition">Facebook</a>
+            <li className='flex items-center gap-2'><FaFacebook />
+
+              <a href="www.facebook.com" className="hover:text-blue-600 transition">Facebook</a>
             </li>
-            <li>
+            <li className='flex items-center gap-2'><FaInstagram />
               <a href="#" className="hover:text-blue-600 transition">Instagram</a>
             </li>
-            <li>
-              <a href="#" className="hover:text-blue-600 transition">YouTube</a>
+            <li className='flex items-center gap-2'>          <FaYoutube />
+
+              <a href="https://www.youtube.com" className="hover:text-blue-600 transition">YouTube</a>
             </li>
           </ul>
         </div>

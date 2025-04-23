@@ -36,7 +36,7 @@ function About() {
   return (
     <div className="w-full flex justify-center">
       <div className="w-full lg:w-350 ">
-        <div className="flex-col justify-center items-center mt-10  bg-[#F9F7F7] p-5">
+        <div className="flex-col justify-center items-center mt-10 h-110 bg-[#F9F7F7] p-5">
           <h1 className="text-center md:text-4xl text-2xl font-bold">What We Offer</h1>
 
           <div className="lg:mx-20 mt-7 mx-30 lg:overflow-visible overflow-hidden">
@@ -57,12 +57,12 @@ function About() {
             >
               {offers.map((offer) => (
                 <SwiperSlide key={offer.id}>
-                  <div className="bg-white shadow-md p-6 rounded-lg text-center h-full">
+                  <div className="bg-white shadow-md p-6 rounded-lg text-center lg:w-70 lg:h-80">
                     <div className="flex justify-center mb-4">
                       <Image
-                        src={offer.image}
+                        src={offer.image }
                         alt={offer.title}
-                        className="h-20 w-20 object-fill"
+                        className="lg:h-20 lg:w-20 w-15 h-15 object-fill"
                       />
                     </div>
                     <h2 className="font-semibold mt-3 text-lg">{offer.title}</h2>
