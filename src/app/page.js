@@ -4,6 +4,7 @@ import About from './about/page'
 import Contact from './contact/page'
 import Faq from './faq/page'
 import Testimonial from './testimonial/page'
+import Partners from './partners/page'
 
 function page() {
   return (
@@ -13,6 +14,7 @@ function page() {
 <Contact/>
 <Faq/>
 <Testimonial/>
+     <Partners/> 
     </div>
   )
 }

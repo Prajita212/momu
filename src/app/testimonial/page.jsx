@@ -38,7 +38,7 @@ function Testimonial() {
 
   return (
     <div className="p-1 md:p-10">
-      <div className="w-full mx-auto bg-[#F9F7F7] px-4 py-16 relative z-0 overflow-hidden lg:overflow-visible mb-10 lg:px-20">
+      <div className="md:w-350 mx-auto bg-[#F9F7F7] px-4 py-16 relative z-0 overflow-hidden lg:overflow-visible mb-10 lg:px-20">
         <div className="text-center mb-12">
           <h1 className="text-3xl md:text-4xl font-bold text-gray-800 lg:mb-25 mb-20">
             What Our Customers Say

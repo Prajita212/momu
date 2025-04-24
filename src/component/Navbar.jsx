@@ -16,10 +16,10 @@ function Navbar() {
     <div>
 <div className="flex justify-between items-center lg:w-350 font-semibold mx-8 mt-8 md:mx-10 top-0 bg-white">
         <div> <Link href="/">
-          <Image src={image}  className="md:w-15 md:h-15 w-10 h-10" />
+          <Image src={image} alt="momu" className="md:w-15 md:h-15 w-10 h-10" />
           </Link> </div>
         <div className="hidden lg:flex md:gap-20 gap-10">
-          <Link href="/">
+          <Link href="/partners">
             <h2 className="hover:text-[#FFA20C] hover:scale-110 transition duration-300">
               Partner with us
             </h2>
