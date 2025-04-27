@@ -96,7 +96,7 @@ function Testimonial() {
                     <p className="text-gray-500 text-sm">{testimonial.role}</p>
                   </div>
                 </div>
-                <RiDoubleQuotesR className="text-gray-400 text-2xl mt-4 ml-auto" />
+                <RiDoubleQuotesR className="text-gray-400 text-2xl mt-4 ml-auto " />
               </div>
             </SwiperSlide>
           ))}
