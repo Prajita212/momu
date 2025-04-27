@@ -38,8 +38,8 @@ function Testimonial() {
 
   return (
     <div className="p-1 md:p-10">
-      <div className="md:w-350 mx-auto bg-[#F9F7F7] px-4 py-16 relative z-0 overflow-hidden lg:overflow-visible mb-10 lg:px-20">
-        <div className="text-center mb-12">
+ <div className="w-full lg:w-350 mx-auto bg-[#F9F7F7] px-4 py-16 relative z-0 overflow-hidden lg:overflow-visible mb-10 lg:px-0">
+  <div className="text-center mb-12">
           <h1 className="text-3xl md:text-4xl font-bold text-gray-800 lg:mb-25 mb-20">
             What Our Customers Say
           </h1>
@@ -47,7 +47,7 @@ function Testimonial() {
 
         <Swiper
           modules={[Pagination, Autoplay]}
-          spaceBetween={30}
+          spaceBetween={20}
           slidesPerView={1}
           pagination={{ clickable: true }}
           autoplay={{ delay: 5000 }}
@@ -56,6 +56,7 @@ function Testimonial() {
             768: {
               slidesPerView: 2,
               direction: "horizontal",
+            
             },
             1024: {
               slidesPerView: 3,
@@ -68,7 +69,7 @@ function Testimonial() {
               key={testimonial.id}
               className="overflow-hidden !flex justify-center"
             >
-              <div className="relative border border-gray-200 rounded-xl p-6 pt-16 h-90 w-80 shadow-sm hover:shadow-md transition-shadow bg-white overflow-visible">
+              <div className="relative border border-gray-200 rounded-xl p-6 pt-16 h-90 w-80 shadow-sm hover:shadow-md transition-shadow bg-white overflow-visible ">
                 <div className="absolute -top-10 left-1/2 transform -translate-x-1/2 z-20">
                   <div className="relative h-20 w-20 rounded-full shadow-lg bg-white">
                     <Image
